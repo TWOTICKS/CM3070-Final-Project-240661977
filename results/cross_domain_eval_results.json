@@ -1,0 +1,1175 @@
+[
+  {
+    "domain": "ML Lecture (original, evaluated corpus)",
+    "n_questions": 11,
+    "n_in_scope": 10,
+    "n_out_of_scope": 1,
+    "avg_recall_rerank": 1.0,
+    "avg_precision_rerank": 0.8,
+    "avg_recall_norerank": 1.0,
+    "avg_precision_norerank": 0.8,
+    "avg_faithfulness_concat": 0.1,
+    "avg_contradiction_concat": 0.0,
+    "avg_faithfulness_perchunk": 0.32916666666666666,
+    "avg_contradiction_perchunk": 0.08333333333333333,
+    "n_low_confidence": 4,
+    "out_of_scope_abstained": [
+      false
+    ],
+    "out_of_scope_details": [
+      {
+        "id": "q11",
+        "question": "What did the lecturer say about quantum computing and its impact on machine learning?",
+        "in_scope": false,
+        "relevant_topics": [],
+        "retrieved_topics_rerank": [
+          "Course Introduction and What Machine Learning Is",
+          "Ethics and Bias in Machine Learning",
+          "Ethics and Bias in Machine Learning"
+        ],
+        "rerank_scores": [
+          0.71,
+          -7.34,
+          -9.66
+        ],
+        "recall_at_3_rerank": null,
+        "precision_at_3_rerank": null,
+        "recall_at_3_norerank": null,
+        "precision_at_3_norerank": null,
+        "abstained": false,
+        "low_confidence": true,
+        "rag_answer": "The lecture excerpt does not mention anything about quantum computing and its impact on machine learning.",
+        "baseline_answer": "The lecturer emphasized that quantum computing has the potential to revolutionize machine learning by potentially solving complex problems much faster than classical computers, especially in areas like optimization and cryptography. They also noted the ongoing research challenges and the need for interdisciplinary collaboration between computer scientists, physicists, and data scientists to fully realize this technology's benefits.",
+        "rag_faithfulness": 0.0,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 0.0,
+        "rag_contradiction_rate_per_chunk": 0.0,
+        "expected_answer": "Not covered in this lecture - quantum computing was not discussed."
+      }
+    ],
+    "per_question": [
+      {
+        "id": "q1",
+        "question": "What is the difference between supervised, unsupervised, and reinforcement learning?",
+        "in_scope": true,
+        "relevant_topics": [
+          "Supervised, Unsupervised, and Reinforcement Learning"
+        ],
+        "retrieved_topics_rerank": [
+          "Supervised, Unsupervised, and Reinforcement Learning",
+          "Supervised, Unsupervised, and Reinforcement Learning",
+          "Supervised, Unsupervised, and Reinforcement Learning"
+        ],
+        "rerank_scores": [
+          4.35,
+          4.14,
+          3.34
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 1.0,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 1.0,
+        "abstained": false,
+        "low_confidence": false,
+        "rag_answer": "Supervised learning involves training models with labeled data, aiming to map inputs to correct outputs. Unsupervised learning finds patterns in unlabeled data, grouping similar items together. Reinforcement learning teaches agents to maximize rewards through interaction with environments, optimizing strategies over repeated trials.",
+        "baseline_answer": "Supervised learning involves training models with labeled data to predict outcomes; Unsupervised learning finds patterns in unlabeled data without explicit guidance; Reinforcement learning teaches agents to make decisions by receiving rewards or penalties from their actions.",
+        "rag_faithfulness": 0.0,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 0.3333333333333333,
+        "rag_contradiction_rate_per_chunk": 0.0,
+        "expected_answer": "Supervised learning trains on labelled examples (input plus correct output), unsupervised learning finds structure in unlabelled data (e.g. clustering), and reinforcement learning has an agent that learns a policy by taking actions in an environment and receiving rewards or penalties."
+      },
+      {
+        "id": "q2",
+        "question": "What is the ReLU activation function and why is it popular in deep learning?",
+        "in_scope": true,
+        "relevant_topics": [
+          "Neural Network Fundamentals"
+        ],
+        "retrieved_topics_rerank": [
+          "Neural Network Fundamentals",
+          "Neural Network Fundamentals",
+          "Training Neural Networks - Gradient Descent and Backpropagation"
+        ],
+        "rerank_scores": [
+          7.82,
+          7.13,
+          -9.09
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 0.6666666666666666,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 0.6666666666666666,
+        "abstained": false,
+        "low_confidence": false,
+        "rag_answer": "The ReLU (Rectified Linear Unit) activation function is used in neural networks to introduce non-linearity. It outputs zero for any negative input and passes the absolute value of the input through for positive inputs. This makes it computationally efficient and helps prevent vanishing gradient problems common in deep networks with sigmoid activations. Its popularity stems from its simplicity, computational efficiency, and effectiveness in avoiding issues like exploding gradients.",
+        "baseline_answer": "The Rectified Linear Unit (ReLU) is an activation function commonly used in neural networks, especially in deep learning models. It outputs zero for negative inputs and the input value itself for positive inputs, which helps to introduce non-linearity into the model while simplifying computation. Its popularity stems from its simplicity, efficiency, and effectiveness in training deep networks, as well as its ability to mitigate the vanishing gradient problem seen with other activation functions like sigmoid or tanh.",
+        "rag_faithfulness": 0.0,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 0.25,
+        "rag_contradiction_rate_per_chunk": 0.0,
+        "expected_answer": "ReLU (rectified linear unit) outputs zero for negative inputs and passes positive inputs through unchanged. It is popular because it is computationally cheap and helps avoid training problems that sigmoid can cause in deep networks."
+      },
+      {
+        "id": "q3",
+        "question": "How does backpropagation work and why is it important for training neural networks?",
+        "in_scope": true,
+        "relevant_topics": [
+          "Training Neural Networks - Gradient Descent and Backpropagation"
+        ],
+        "retrieved_topics_rerank": [
+          "Training Neural Networks - Gradient Descent and Backpropagation",
+          "Training Neural Networks - Gradient Descent and Backpropagation",
+          "Training Neural Networks - Gradient Descent and Backpropagation"
+        ],
+        "rerank_scores": [
+          6.56,
+          3.91,
+          3.13
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 1.0,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 0.6666666666666666,
+        "abstained": false,
+        "low_confidence": true,
+        "rag_answer": "Backpropagation works by efficiently calculating the gradients of the loss function with respect to each weight in a neural network, layer by layer, starting from the output and moving backward through the layers. It uses the chain rule from calculus to compute these gradients. This process is crucial because without backpropagation, training very deep networks would be computationally impractical due to the sheer amount of calculations involved. Backpropagation allows for efficient computation of gradients, enabling the application of optimization algorithms like gradient descent to minimize the loss function and thus improve the model's performance.",
+        "baseline_answer": "Backpropagation is an algorithm used in training artificial neural networks to adjust weights by minimizing error between predicted outputs and actual targets. It works by calculating gradients of the loss function with respect to each weight, then updating these weights using those gradients. This process repeats iteratively until the network learns patterns from input data. Backpropagation is crucial because it enables efficient learning through gradient descent methods, allowing neural networks to improve their performance over time without manual tuning of parameters.",
+        "rag_faithfulness": 0.0,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 0.0,
+        "rag_contradiction_rate_per_chunk": 0.0,
+        "expected_answer": "Backpropagation computes the gradient of the loss with respect to every weight by working backwards from the output to the input using the chain rule, allowing gradient descent to update weights efficiently. Without it, training deep networks with millions of parameters would not be feasible."
+      },
+      {
+        "id": "q4",
+        "question": "What is dropout and how does it help prevent overfitting?",
+        "in_scope": true,
+        "relevant_topics": [
+          "Overfitting, Underfitting, and Regularization"
+        ],
+        "retrieved_topics_rerank": [
+          "Overfitting, Underfitting, and Regularization",
+          "Overfitting, Underfitting, and Regularization",
+          "Overfitting, Underfitting, and Regularization"
+        ],
+        "rerank_scores": [
+          5.18,
+          1.51,
+          -2.87
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 1.0,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 1.0,
+        "abstained": false,
+        "low_confidence": false,
+        "rag_answer": "Dropout is a technique used to combat overfitting by randomly \"switching off\" a fraction of neurons during training. It helps prevent the network from relying too heavily on any single neuron, encouraging more robust, distributed representations. By doing so, dropout ensures that the model learns to generalize better to unseen data.",
+        "baseline_answer": "Dropout is a regularization technique used in neural networks to reduce overfitting by randomly setting a fraction of input units to zero during training, which helps improve generalization to new data. It works by forcing neurons to learn more robust features that are less likely to be affected by noise or irrelevant information.",
+        "rag_faithfulness": 0.0,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 0.6666666666666666,
+        "rag_contradiction_rate_per_chunk": 0.3333333333333333,
+        "expected_answer": "Dropout randomly switches off a fraction of neurons during each training forward pass, preventing the network from relying too heavily on any single neuron and encouraging more robust, distributed representations, which reduces overfitting."
+      },
+      {
+        "id": "q5",
+        "question": "What is the difference between a validation set and a test set?",
+        "in_scope": true,
+        "relevant_topics": [
+          "Overfitting, Underfitting, and Regularization"
+        ],
+        "retrieved_topics_rerank": [
+          "Overfitting, Underfitting, and Regularization",
+          "Evaluating Machine Learning Models",
+          "Course Introduction and What Machine Learning Is"
+        ],
+        "rerank_scores": [
+          -1.23,
+          -10.08,
+          -10.48
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 0.3333333333333333,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 0.3333333333333333,
+        "abstained": false,
+        "low_confidence": true,
+        "rag_answer": "The validation set is used to tune hyperparameters such as the learning rate and to monitor for overfitting during training. The test set, on the other hand, is used exclusively at the end to get an honest estimate of how the model will perform in the real world.",
+        "baseline_answer": "A validation set is used to tune hyperparameters of an algorithm, while a test set evaluates its performance without overfitting to the training data.",
+        "rag_faithfulness": 0.0,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 0.0,
+        "rag_contradiction_rate_per_chunk": 0.5,
+        "expected_answer": "The validation set is used during training to tune hyperparameters and monitor for overfitting, while the test set is used only once at the end to get an honest estimate of real-world performance."
+      },
+      {
+        "id": "q6",
+        "question": "How do convolutional neural networks process images differently from a fully connected network?",
+        "in_scope": true,
+        "relevant_topics": [
+          "Convolutional Neural Networks for Image Processing"
+        ],
+        "retrieved_topics_rerank": [
+          "Convolutional Neural Networks for Image Processing",
+          "Convolutional Neural Networks for Image Processing",
+          "Recurrent Neural Networks and Sequence Modelling"
+        ],
+        "rerank_scores": [
+          1.18,
+          -0.35,
+          -2.69
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 0.6666666666666666,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 1.0,
+        "abstained": false,
+        "low_confidence": false,
+        "rag_answer": "Convolutional Neural Networks (CNNs) process images differently from fully connected networks by focusing on local features within patches of the image rather than connecting all pixels directly to all neurons in subsequent layers. In CNNs, small \"filters\" or \"kernels\" move over the image, detecting simple features like edges and corners, which are then combined to form more complex structures. This approach allows CNNs to efficiently capture spatial hierarchies in images without needing to connect every pixel to every neuron, making them highly effective for image recognition tasks.",
+        "baseline_answer": "Convolutional Neural Networks (CNNs) process images by applying filters to small regions of an image, which helps in capturing spatial hierarchies and features like edges and textures. This is different from fully connected networks, which treat each pixel independently without considering its position relative to other pixels or higher-level structures within the image. CNNs use pooling layers to reduce dimensionality while preserving important features, whereas fully connected networks require all neurons to be interconnected with every input feature.",
+        "rag_faithfulness": 0.0,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 0.6666666666666666,
+        "rag_contradiction_rate_per_chunk": 0.0,
+        "expected_answer": "CNNs use small filters/kernels that slide across the image to compute local features instead of connecting every pixel to every neuron, with early layers learning edges/corners and deeper layers combining these into complex shapes and objects; pooling layers reduce spatial size and add robustness to small translations."
+      },
+      {
+        "id": "q7",
+        "question": "What problem do LSTMs and GRUs solve compared to basic RNNs?",
+        "in_scope": true,
+        "relevant_topics": [
+          "Recurrent Neural Networks and Sequence Modelling"
+        ],
+        "retrieved_topics_rerank": [
+          "Recurrent Neural Networks and Sequence Modelling",
+          "Recurrent Neural Networks and Sequence Modelling",
+          "Recurrent Neural Networks and Sequence Modelling"
+        ],
+        "rerank_scores": [
+          5.12,
+          -5.75,
+          -6.26
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 1.0,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 1.0,
+        "abstained": false,
+        "low_confidence": false,
+        "rag_answer": "LSTMs and GRUs solve the problem of vanishing gradients by introducing gating mechanisms within their architecture. These mechanisms allow the network to selectively keep or discard information from past time steps during training, thus preventing the gradients from becoming too small or exploding, which was a major issue with basic RNNs when dealing with long sequences.",
+        "baseline_answer": "LSTM (Long Short-Term Memory) networks and GRU (Gated Recurrent Unit) units address the vanishing gradient problem that affects standard RNNs, allowing them to maintain information over longer sequences without losing it as easily. This makes LSTM and GRU models more effective in tasks requiring long-term dependencies or sequence prediction.",
+        "rag_faithfulness": 0.0,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 1.0,
+        "rag_contradiction_rate_per_chunk": 0.0,
+        "expected_answer": "Basic RNNs suffer from the vanishing/exploding gradient problem over long sequences. LSTMs and GRUs use gating mechanisms to control what information is kept or discarded over time, helping the network retain useful information over longer sequences."
+      },
+      {
+        "id": "q8",
+        "question": "Why is accuracy alone not a good metric for imbalanced classification datasets, and what should be used instead?",
+        "in_scope": true,
+        "relevant_topics": [
+          "Evaluating Machine Learning Models"
+        ],
+        "retrieved_topics_rerank": [
+          "Evaluating Machine Learning Models",
+          "Evaluating Machine Learning Models",
+          "Convolutional Neural Networks for Image Processing"
+        ],
+        "rerank_scores": [
+          7.08,
+          3.1,
+          -7.89
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 0.6666666666666666,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 0.6666666666666666,
+        "abstained": false,
+        "low_confidence": true,
+        "rag_answer": "Accuracy alone is not a good metric for imbalanced classification datasets because it can be misleading when there are vastly different proportions of classes. In such cases, a high accuracy might indicate that the model is performing well overall but could be entirely due to its ability to predict the majority class. Instead, precision and recall are better suited to evaluate performance on imbalanced datasets by focusing on the quality of positive predictions rather than just their quantity.",
+        "baseline_answer": "Accuracy can be misleading in imbalanced datasets because it does not account for the imbalance of classes. A model might achieve high accuracy by simply predicting the majority class without considering minority instances. Instead, metrics like precision, recall, F1 score, or area under the ROC curve (AUC-ROC) are more appropriate as they provide a better understanding of how well the model performs across different types of errors.",
+        "rag_faithfulness": 0.0,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 0.0,
+        "rag_contradiction_rate_per_chunk": 0.0,
+        "expected_answer": "On imbalanced datasets a model can get high accuracy by always predicting the majority class while being useless. Precision, recall, the F1 score, and a confusion matrix give a more complete picture of performance."
+      },
+      {
+        "id": "q9",
+        "question": "What examples of bias in machine learning systems were discussed, and what other ethical concerns were raised?",
+        "in_scope": true,
+        "relevant_topics": [
+          "Ethics and Bias in Machine Learning"
+        ],
+        "retrieved_topics_rerank": [
+          "Ethics and Bias in Machine Learning",
+          "Ethics and Bias in Machine Learning",
+          "Supervised, Unsupervised, and Reinforcement Learning"
+        ],
+        "rerank_scores": [
+          4.32,
+          1.85,
+          -1.96
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 0.6666666666666666,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 0.6666666666666666,
+        "abstained": false,
+        "low_confidence": false,
+        "rag_answer": "The lecture discussed two main types of bias in machine learning systems:\n\n1. **Societal Bias**: When machine learning models are trained on biased datasets, they can perpetuate or even exacerbate existing social inequalities. For instance, hiring algorithms that discriminate against women due to their training on historical data skewed towards men, or facial recognition systems that perform poorly on darker skin tones due to unrepresentative training data.\n\n2. **Privacy Concerns**: Training machine learning models on personal data raises significant privacy issues. This includes potential misuse of sensitive information and the lack of control users have over how their data is used by AI systems.\n\nAdditionally, the lecture highlighted several broader ethical concerns beyond bias and privacy:\n\n- **Transparency**: Modern deep learning models are often \"black boxes\" that make decisions difficult to understand, which is crucial in high-stakes applications such as healthcare or criminal justice.\n  \n- **Academic Integrity**: The risk of generating plausible-sounding but incorrect information, commonly referred to as \"hall",
+        "baseline_answer": "Examples of bias in machine learning systems include gender biases in facial recognition software, racial biases in criminal justice algorithms, and age-related biases in hiring recommendations. Ethical concerns raised by these issues include fairness, accountability, transparency, and privacy.",
+        "rag_faithfulness": 0.0,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 0.375,
+        "rag_contradiction_rate_per_chunk": 0.0,
+        "expected_answer": "Examples include hiring algorithms that discriminated against women due to historical hiring data, and facial recognition systems that performed worse on darker-skinned faces due to unrepresentative training data. Other concerns raised include privacy, lack of transparency (black-box models), and the risk of AI systems generating plausible but incorrect information (hallucination)."
+      },
+      {
+        "id": "q10",
+        "question": "Compare CNNs and RNNs in terms of the kind of data they are designed to process.",
+        "in_scope": true,
+        "relevant_topics": [
+          "Convolutional Neural Networks for Image Processing",
+          "Recurrent Neural Networks and Sequence Modelling"
+        ],
+        "retrieved_topics_rerank": [
+          "Convolutional Neural Networks for Image Processing",
+          "Recurrent Neural Networks and Sequence Modelling",
+          "Convolutional Neural Networks for Image Processing"
+        ],
+        "rerank_scores": [
+          3.4,
+          2.16,
+          0.54
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 1.0,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 1.0,
+        "abstained": false,
+        "low_confidence": true,
+        "rag_answer": "CNNs are specifically designed for processing grid-like data such as images, whereas RNNs are designed to handle sequential data like text, audio, or time series.",
+        "baseline_answer": "CNNs are designed to process grid-like data such as images, where features tend to be spatially localized. They excel at identifying patterns and objects within these grids due to their convolutional layers that detect edges and textures. On the other hand, RNNs are better suited for sequential data like text or time series, where dependencies between elements need to be captured over time. They use recurrent connections to maintain state across different time steps, making them ideal for tasks involving sequence prediction or analysis.",
+        "rag_faithfulness": 1.0,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 0.0,
+        "rag_contradiction_rate_per_chunk": 0.0,
+        "expected_answer": "CNNs are designed for grid-like data such as images, using filters to capture spatial patterns. RNNs are designed for sequential data such as text, audio, or time series, maintaining a hidden state that carries information from earlier elements in the sequence."
+      },
+      {
+        "id": "q11",
+        "question": "What did the lecturer say about quantum computing and its impact on machine learning?",
+        "in_scope": false,
+        "relevant_topics": [],
+        "retrieved_topics_rerank": [
+          "Course Introduction and What Machine Learning Is",
+          "Ethics and Bias in Machine Learning",
+          "Ethics and Bias in Machine Learning"
+        ],
+        "rerank_scores": [
+          0.71,
+          -7.34,
+          -9.66
+        ],
+        "recall_at_3_rerank": null,
+        "precision_at_3_rerank": null,
+        "recall_at_3_norerank": null,
+        "precision_at_3_norerank": null,
+        "abstained": false,
+        "low_confidence": true,
+        "rag_answer": "The lecture excerpt does not mention anything about quantum computing and its impact on machine learning.",
+        "baseline_answer": "The lecturer emphasized that quantum computing has the potential to revolutionize machine learning by potentially solving complex problems much faster than classical computers, especially in areas like optimization and cryptography. They also noted the ongoing research challenges and the need for interdisciplinary collaboration between computer scientists, physicists, and data scientists to fully realize this technology's benefits.",
+        "rag_faithfulness": 0.0,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 0.0,
+        "rag_contradiction_rate_per_chunk": 0.0,
+        "expected_answer": "Not covered in this lecture - quantum computing was not discussed."
+      }
+    ]
+  },
+  {
+    "domain": "Roman History",
+    "n_questions": 11,
+    "n_in_scope": 10,
+    "n_out_of_scope": 1,
+    "avg_recall_rerank": 1.0,
+    "avg_precision_rerank": 0.7,
+    "avg_recall_norerank": 1.0,
+    "avg_precision_norerank": 0.6666666666666666,
+    "avg_faithfulness_concat": 0.20555555555555555,
+    "avg_contradiction_concat": 0.075,
+    "avg_faithfulness_perchunk": 0.5419444444444445,
+    "avg_contradiction_perchunk": 0.052500000000000005,
+    "n_low_confidence": 1,
+    "out_of_scope_abstained": [
+      true
+    ],
+    "out_of_scope_details": [
+      {
+        "id": "r11",
+        "question": "What did the lecturer say about dropout and neural network regularization?",
+        "in_scope": false,
+        "relevant_topics": [],
+        "retrieved_topics_rerank": [
+          "The Decline and Fall of the Western Empire",
+          "The Legacy of Rome",
+          "The Decline and Fall of the Western Empire"
+        ],
+        "rerank_scores": [
+          -11.37,
+          -11.38,
+          -11.38
+        ],
+        "recall_at_3_rerank": null,
+        "precision_at_3_rerank": null,
+        "recall_at_3_norerank": null,
+        "precision_at_3_norerank": null,
+        "abstained": true,
+        "low_confidence": false,
+        "rag_answer": "I couldn't find anything in this lecture covering that topic.",
+        "baseline_answer": "The lecturer emphasized that dropout is an effective technique to prevent overfitting in neural networks by randomly dropping out units during training, which helps generalize better. Regularization techniques like L1 or L2 were also discussed as another method to control model complexity and improve generalization.",
+        "rag_faithfulness": null,
+        "rag_contradiction_rate": null,
+        "rag_faithfulness_per_chunk": null,
+        "rag_contradiction_rate_per_chunk": null,
+        "expected_answer": "Not covered in this lecture - the lecture is about Roman history and never mentions neural networks, dropout, or machine learning."
+      }
+    ],
+    "per_question": [
+      {
+        "id": "r1",
+        "question": "What legendary story explains the founding of Rome, and how did the monarchy end?",
+        "in_scope": true,
+        "relevant_topics": [
+          "The Founding and Early Kingdom of Rome"
+        ],
+        "retrieved_topics_rerank": [
+          "The Founding and Early Kingdom of Rome",
+          "The Founding and Early Kingdom of Rome",
+          "The Decline and Fall of the Western Empire"
+        ],
+        "rerank_scores": [
+          4.82,
+          3.32,
+          -3.35
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 0.6666666666666666,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 0.6666666666666666,
+        "abstained": false,
+        "low_confidence": false,
+        "rag_answer": "The legend of Rome's founding comes from tradition, claiming that Romulus and Remus, twins abandoned as infants, were raised by a she-wolf and later founded the city. According to this tale, Romulus killed Remus in a dispute over the location of the new settlement, becoming its first king. However, archaeological evidence suggests that the area was inhabited long before any single founding date, indicating a gradual merging of settlements rather than a singular event. The traditional account of the monarchy's end is through the overthrow of King Tarquin the Proud in 509 BCE, marking the abolition of the monarchy.",
+        "baseline_answer": "The legend of Romulus and Remus tells the tale of twin brothers who were abandoned by their mother and raised by a she-wolf. They founded Rome but were later killed by a wolf that had been bribed to kill them. The monarchy ended with the overthrow of Romulus by his brother Numa Pompilius.",
+        "rag_faithfulness": 0.0,
+        "rag_contradiction_rate": 0.25,
+        "rag_faithfulness_per_chunk": 0.75,
+        "rag_contradiction_rate_per_chunk": 0.0,
+        "expected_answer": "According to tradition, Rome was founded in 753 BCE by Romulus, who along with his twin brother Remus had been raised by a she-wolf; Romulus killed Remus and became Rome's first king. The monarchy ended around 509 BCE when a rebellion against the tyranny of Tarquin the Proud abolished one-man rule."
+      },
+      {
+        "id": "r2",
+        "question": "How did the Roman Republic divide power between the Senate, consuls, and tribunes to prevent tyranny?",
+        "in_scope": true,
+        "relevant_topics": [
+          "The Roman Republic and Its Institutions"
+        ],
+        "retrieved_topics_rerank": [
+          "The Roman Republic and Its Institutions",
+          "The Roman Republic and Its Institutions",
+          "Augustus and the Beginning of the Empire"
+        ],
+        "rerank_scores": [
+          6.01,
+          0.4,
+          -5.98
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 0.6666666666666666,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 0.6666666666666666,
+        "abstained": false,
+        "low_confidence": false,
+        "rag_answer": "The Roman Republic divided power through several mechanisms to prevent tyranny:\n\n1. **Senate**: Made up of wealthy landowners called patricians, advising on policy and controlling finances.\n2. **Consuls**: Elected annually with veto powers over each other, providing a check against tyranny.\n3. **Magistrates**: Various offices handling different aspects of governance, including the treasury, courts, and city administration.\n4. **Plebeians' Assembly**: Gained the right to elect officials called tribunes, who could veto actions by the Senate or magistrates that harmed plebeian interests.\n\nThese structures collectively ensured checks and balances among different groups within the state, preventing any single group from gaining excessive control.",
+        "baseline_answer": "The Roman Republic divided power through several mechanisms: the Senate held legislative authority, the consuls were military leaders who also presided over state affairs, and the tribunes protected citizens' rights by vetoing laws or addressing issues directly with magistrates. This division aimed to check each other's powers and prevent any one individual from gaining too much control.",
+        "rag_faithfulness": 0.2222222222222222,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 0.3333333333333333,
+        "rag_contradiction_rate_per_chunk": 0.0,
+        "expected_answer": "The Senate of wealthy patricians advised on policy and controlled finances, two annually elected consuls held executive authority and could veto each other, and plebeians eventually won the right to elect tribunes who could veto actions harming plebeian interests."
+      },
+      {
+        "id": "r3",
+        "question": "What happened during the Second Punic War, and how did Rome ultimately defeat Carthage?",
+        "in_scope": true,
+        "relevant_topics": [
+          "The Punic Wars and Roman Expansion"
+        ],
+        "retrieved_topics_rerank": [
+          "The Punic Wars and Roman Expansion",
+          "The Punic Wars and Roman Expansion",
+          "The Decline and Fall of the Western Empire"
+        ],
+        "rerank_scores": [
+          7.71,
+          7.52,
+          -5.65
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 0.6666666666666666,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 0.6666666666666666,
+        "abstained": false,
+        "low_confidence": false,
+        "rag_answer": "During the Second Punic War, Hannibal led a massive Carthaginian army through the Alps into Italy, inflicting significant defeats on Roman forces. Despite these setbacks, Rome refused to give up and rebuilt its military strength. Eventually, General Scipio Africanus defeated Hannibal at the Battle of Zama in 202 BCE, decisively ending the conflict.",
+        "baseline_answer": "The Second Punic War began in 218 BC when Hannibal Barca led an army from Carthage across the Alps to invade Italy. Rome responded by sending generals Scipio Africanus and Publius Cornelius Scipio Asiaticus to fight against Carthage. The war ended with a decisive victory for Rome at the Battle of Zama in 202 BC, where Scipio decisively defeated Hannibal. This marked the end of the Punic Wars and solidified Roman dominance over the Mediterranean world.",
+        "rag_faithfulness": 0.0,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 0.6666666666666666,
+        "rag_contradiction_rate_per_chunk": 0.0,
+        "expected_answer": "Hannibal marched an army across the Alps and inflicted devastating defeats on Rome, notably at Cannae, but Rome rebuilt its forces and General Scipio defeated Hannibal at the Battle of Zama in 202 BCE; Rome later destroyed Carthage entirely in the Third Punic War in 146 BCE."
+      },
+      {
+        "id": "r4",
+        "question": "Why is Julius Caesar's crossing of the Rubicon significant, and how did he die?",
+        "in_scope": true,
+        "relevant_topics": [
+          "Julius Caesar and the Fall of the Republic"
+        ],
+        "retrieved_topics_rerank": [
+          "Julius Caesar and the Fall of the Republic",
+          "Julius Caesar and the Fall of the Republic",
+          "Augustus and the Beginning of the Empire"
+        ],
+        "rerank_scores": [
+          3.67,
+          -5.95,
+          -7.81
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 0.6666666666666666,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 0.6666666666666666,
+        "abstained": false,
+        "low_confidence": true,
+        "rag_answer": "Julius Caesar's crossing of the Rubicon River marked a critical moment where he declared war on the Roman Republic, effectively ending its existence. This act symbolized his ambition to become dictatorial powers over Rome, leading to his eventual assassination by a group of senators on March 15, 44 BCE.",
+        "baseline_answer": "Julius Caesar's crossing of the Rubicon in 49 BCE was significant because it marked the beginning of civil war between him and Pompey, leading to his eventual assassination by Brutus and Cassius. He died at the Battle of Philippi in 42 BCE after being defeated by Octavian (later Augustus).",
+        "rag_faithfulness": 0.0,
+        "rag_contradiction_rate": 0.5,
+        "rag_faithfulness_per_chunk": 0.0,
+        "rag_contradiction_rate_per_chunk": 0.0,
+        "expected_answer": "Crossing the Rubicon River with his army in 49 BCE was technically a declaration of war on the Republic, giving us the phrase for any irreversible decision. Caesar was later declared dictator for life and was assassinated by senators led by Brutus and Cassius on the Ides of March, 44 BCE."
+      },
+      {
+        "id": "r5",
+        "question": "How did Augustus establish the Principate while appearing to preserve republican government?",
+        "in_scope": true,
+        "relevant_topics": [
+          "Augustus and the Beginning of the Empire"
+        ],
+        "retrieved_topics_rerank": [
+          "Augustus and the Beginning of the Empire",
+          "Augustus and the Beginning of the Empire",
+          "The Roman Republic and Its Institutions"
+        ],
+        "rerank_scores": [
+          2.86,
+          -3.34,
+          -7.8
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 0.6666666666666666,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 0.6666666666666666,
+        "abstained": false,
+        "low_confidence": false,
+        "rag_answer": "Augustus established the Principate by presenting himself as \"princeps\" or first citizen, effectively becoming the sole ruler of the Roman Empire through a combination of constitutional reforms and propaganda. He received the title \"Augustus\" and gradually gained control over the state apparatus, including the Senate and the army. By doing so, he maintained appearances of republican governance while consolidating his power.",
+        "baseline_answer": "Augustus established the Principate by consolidating power through a series of reforms and alliances, including appointing his family members as consuls and making them co-rulers with him in Rome. He also maintained the facade of republican government by nominally retaining the traditional Roman offices and institutions, such as the Senate and the magistracies. This allowed him to maintain control over the state without completely abolishing the existing political structures.",
+        "rag_faithfulness": 0.0,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 0.3333333333333333,
+        "rag_contradiction_rate_per_chunk": 0.3333333333333333,
+        "expected_answer": "Octavian, later titled Augustus by the Senate in 27 BCE, presented himself merely as \"first citizen\" (princeps) rather than seizing power outright, while in practice holding supreme military and political authority - monarchy dressed in republican clothing."
+      },
+      {
+        "id": "r6",
+        "question": "What Roman engineering achievements allowed the empire to function as one connected system?",
+        "in_scope": true,
+        "relevant_topics": [
+          "Roman Engineering and Infrastructure"
+        ],
+        "retrieved_topics_rerank": [
+          "Roman Engineering and Infrastructure",
+          "Roman Engineering and Infrastructure",
+          "Augustus and the Beginning of the Empire"
+        ],
+        "rerank_scores": [
+          5.78,
+          2.76,
+          -5.95
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 0.6666666666666666,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 0.6666666666666666,
+        "abstained": false,
+        "low_confidence": false,
+        "rag_answer": "Roman engineering, including their extensive road networks, aqueducts, and concrete structures, allowed the empire to function as one connected system by facilitating rapid movement of people, goods, and military forces across vast distances. These infrastructural advancements helped maintain political control and cultural unity within the sprawling Roman Empire.",
+        "baseline_answer": "Roman engineering, particularly in aqueducts and roads, facilitated the efficient movement of people and goods across vast distances within the empire. The construction of these infrastructure projects ensured that water was available for drinking and agriculture, while roads provided a means of communication and transport, enabling rapid deployment of troops and supplies during military campaigns or civil unrest. This interconnected network supported the administrative efficiency necessary for an empire spanning Europe, North Africa, and parts of Asia.",
+        "rag_faithfulness": 0.5,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 1.0,
+        "rag_contradiction_rate_per_chunk": 0.0,
+        "expected_answer": "Rome built a road network of over 400,000 kilometres, aqueducts bringing fresh water into cities, durable concrete (some structures like the Pantheon's dome still stand today), and sophisticated sewer systems like the Cloaca Maxima."
+      },
+      {
+        "id": "r7",
+        "question": "What was daily life like for different social classes in ancient Rome?",
+        "in_scope": true,
+        "relevant_topics": [
+          "Daily Life in Ancient Rome"
+        ],
+        "retrieved_topics_rerank": [
+          "Daily Life in Ancient Rome",
+          "Daily Life in Ancient Rome",
+          "The Founding and Early Kingdom of Rome"
+        ],
+        "rerank_scores": [
+          3.4,
+          -7.35,
+          -7.59
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 0.6666666666666666,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 0.6666666666666666,
+        "abstained": false,
+        "low_confidence": false,
+        "rag_answer": "In ancient Rome, daily life varied significantly across different social classes:\n\n1. **Senators and Equestrians**: These elite groups enjoyed high status and wealth. They lived in luxurious homes and participated in public affairs. Their lives were marked by grand ceremonies and political activities.\n\n2. **Ordinary Free Citizens**: This class comprised most of the population but faced significant limitations. They lived in crowded, sometimes dangerous, multi-story buildings known as insulae. Daily life centered around basic sustenance such as bread, olive oil, wine, and vegetables, with meat being a rare luxury item.\n\n3. **Freedmen**: Formerly enslaved individuals gained freedom through legal means and could rise socially. Their lives were more stable than those of slaves but still constrained by their former servitude.\n\n4. **Enslaved Population**: The vast majority of the population was enslaved, providing labor essential to the economy. Their lives were harsh and exploitative, serving as a crucial part of the economic system.\n\nThe",
+        "baseline_answer": "Daily life varied significantly among different social classes in ancient Rome, reflecting the class system that existed there. The highest social class included the patricians, who were wealthy landowners and aristocrats. They enjoyed luxury lifestyles with access to public baths, theaters, and gladiatorial games. The plebeians, or common people, lived in poorer conditions but had more freedom of movement and could engage in trade and agriculture. Slaves made up the lowest class; they worked in mines, as laborers, or as domestic servants. Each class had distinct roles and responsibilities within society.",
+        "rag_faithfulness": 0.0,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 0.26666666666666666,
+        "rag_contradiction_rate_per_chunk": 0.06666666666666667,
+        "expected_answer": "Society was sharply stratified between elites, ordinary citizens, freedmen, and a large enslaved population. Most urban Romans lived in cramped multi-story apartment blocks called insulae, and public entertainment like gladiatorial games and chariot races was central to social and political life."
+      },
+      {
+        "id": "r8",
+        "question": "What economic, political, and military factors led to the fall of the Western Roman Empire?",
+        "in_scope": true,
+        "relevant_topics": [
+          "The Decline and Fall of the Western Empire"
+        ],
+        "retrieved_topics_rerank": [
+          "The Decline and Fall of the Western Empire",
+          "The Decline and Fall of the Western Empire",
+          "Augustus and the Beginning of the Empire"
+        ],
+        "rerank_scores": [
+          7.28,
+          0.71,
+          -6.15
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 0.6666666666666666,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 0.6666666666666666,
+        "abstained": false,
+        "low_confidence": false,
+        "rag_answer": "The Western Roman Empire fell due to multiple interconnected factors including chronic inflation, heavy taxation, and a shrinking tax base; frequent civil wars and a rapid succession of emperors leading to weak central authority; and sustained pressure from external threats such as invasions from northern and eastern fronts, coupled with reliance on foreign mercenaries who lacked loyalty to Rome.",
+        "baseline_answer": "The fall of the Western Roman Empire was influenced by several key factors: economic decline due to overextension in governance, leading to financial instability; political fragmentation as central authority weakened; and military defeats against Germanic tribes, particularly the Visigoths under Alaric I who sacked Rome in 410 AD. These conditions combined with internal strife and external pressures contributed significantly to the empire's collapse.",
+        "rag_faithfulness": 1.0,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 1.0,
+        "rag_contradiction_rate_per_chunk": 0.0,
+        "expected_answer": "Chronic inflation and a shrinking tax base, near-constant civil wars and rapid turnover of emperors, and sustained frontier pressure combined with reliance on foreign mercenaries all weakened central authority, traditionally dated to 476 CE when Odoacer deposed the last Western emperor."
+      },
+      {
+        "id": "r9",
+        "question": "How does Roman law and Republican institutional design influence modern government?",
+        "in_scope": true,
+        "relevant_topics": [
+          "The Legacy of Rome"
+        ],
+        "retrieved_topics_rerank": [
+          "The Legacy of Rome",
+          "The Legacy of Rome",
+          "The Roman Republic and Its Institutions"
+        ],
+        "rerank_scores": [
+          2.4,
+          2.23,
+          -0.31
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 0.6666666666666666,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 0.6666666666666666,
+        "abstained": false,
+        "low_confidence": false,
+        "rag_answer": "Roman law and Republican institutional designs have significantly influenced modern governance through several key aspects:\n\n1. Legal structures: Roman law forms the basis for legal systems in much of Europe and has deeply impacted legal procedures and contract laws.\n2. Language evolution: Latin gave rise to Romance languages such as French, Spanish, Italian, Portuguese, and Romanian, influencing English vocabulary, particularly technical and formal terms.\n3. Architectural elements: Roman architectural styles, including the arch, dome, and use of concrete, continue to be used in modern civic architecture.\n4. Institutional models: The concept of checks and balances, elected representatives, and term limits found in Roman republican institutions have been adopted by modern constitutions, including those of the United States.",
+        "baseline_answer": "Roman law, particularly its emphasis on individual rights, procedural justice, and the rule of law, has had a profound impact on modern governance. The concept of natural law, which influenced Roman legal philosophy, is foundational in many contemporary legal systems. Additionally, the idea that governments should be accountable to their citizens through representative institutions reflects principles found in both ancient Rome and modern democracies. These influences have shaped how laws are made, enforced, and interpreted today.",
+        "rag_faithfulness": 0.0,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 0.625,
+        "rag_contradiction_rate_per_chunk": 0.125,
+        "expected_answer": "Roman law is a direct ancestor of legal systems across Europe, particularly around contracts and property rights, and the Republic's ideas of checks and balances, elected representatives, and term limits directly influenced later constitutions, including that of the United States."
+      },
+      {
+        "id": "r10",
+        "question": "Compare the checks on power in the Roman Republic with the authority Augustus actually held under the Principate.",
+        "in_scope": true,
+        "relevant_topics": [
+          "The Roman Republic and Its Institutions",
+          "Augustus and the Beginning of the Empire"
+        ],
+        "retrieved_topics_rerank": [
+          "Augustus and the Beginning of the Empire",
+          "The Roman Republic and Its Institutions",
+          "Augustus and the Beginning of the Empire"
+        ],
+        "rerank_scores": [
+          2.0,
+          -0.05,
+          -4.73
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 1.0,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 0.6666666666666666,
+        "abstained": false,
+        "low_confidence": false,
+        "rag_answer": "In the Roman Republic, power was divided among different institutions to prevent any single individual from gaining excessive control. The Senate advised on policies but lacked formal legislative powers; executive authority was shared between two consuls, who could veto each other. Various magistrates managed specific areas such as finance, justice, and local governance. Ordinary citizens had limited rights compared to the elite class, and they only gained the right to elect tribunes who could veto Senate decisions affecting their interests. This system aimed to balance power through checks and balances.\n\nUnder the Principate established by Augustus, power was concentrated more heavily in the hands of a single ruler. He was referred to as \"Augustus\" and presented himself as \"princeps,\" or first citizen, rather than king. His position was formally recognized when the Senate bestowed upon him the title \"Augustus.\" While he retained significant influence over military and administrative matters, he also took on roles traditionally associated with kingship, such as being considered divine. This shift represented",
+        "baseline_answer": "In the Roman Republic, checks on power were more formalized and included institutions like the Senate and tribunes to limit the excesses of the consuls. Under the Principate of Augustus, these checks were largely replaced by an autocratic ruler who wielded absolute power through his position as emperor. The Principate introduced a new system where emperors had direct control over provinces and could make laws without consulting the Senate or other traditional authorities. This shift from republican governance to imperial rule marked a significant change in how power was exercised in Rome.",
+        "rag_faithfulness": 0.3333333333333333,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 0.4444444444444444,
+        "rag_contradiction_rate_per_chunk": 0.0,
+        "expected_answer": "The Republic split power between the Senate, two mutually-vetoing consuls, and tribunes specifically to prevent one person accumulating control, whereas Augustus, while nominally just \"first citizen\", held supreme military and political authority in practice - the Principate preserved the Republic's forms while ending its actual distribution of power."
+      },
+      {
+        "id": "r11",
+        "question": "What did the lecturer say about dropout and neural network regularization?",
+        "in_scope": false,
+        "relevant_topics": [],
+        "retrieved_topics_rerank": [
+          "The Decline and Fall of the Western Empire",
+          "The Legacy of Rome",
+          "The Decline and Fall of the Western Empire"
+        ],
+        "rerank_scores": [
+          -11.37,
+          -11.38,
+          -11.38
+        ],
+        "recall_at_3_rerank": null,
+        "precision_at_3_rerank": null,
+        "recall_at_3_norerank": null,
+        "precision_at_3_norerank": null,
+        "abstained": true,
+        "low_confidence": false,
+        "rag_answer": "I couldn't find anything in this lecture covering that topic.",
+        "baseline_answer": "The lecturer emphasized that dropout is an effective technique to prevent overfitting in neural networks by randomly dropping out units during training, which helps generalize better. Regularization techniques like L1 or L2 were also discussed as another method to control model complexity and improve generalization.",
+        "rag_faithfulness": null,
+        "rag_contradiction_rate": null,
+        "rag_faithfulness_per_chunk": null,
+        "rag_contradiction_rate_per_chunk": null,
+        "expected_answer": "Not covered in this lecture - the lecture is about Roman history and never mentions neural networks, dropout, or machine learning."
+      }
+    ]
+  },
+  {
+    "domain": "Nutrition Science",
+    "n_questions": 11,
+    "n_in_scope": 10,
+    "n_out_of_scope": 1,
+    "avg_recall_rerank": 1.0,
+    "avg_precision_rerank": 0.6666666666666666,
+    "avg_recall_norerank": 1.0,
+    "avg_precision_norerank": 0.6,
+    "avg_faithfulness_concat": 0.075,
+    "avg_contradiction_concat": 0.0,
+    "avg_faithfulness_perchunk": 0.4903846153846153,
+    "avg_contradiction_perchunk": 0.05769230769230769,
+    "n_low_confidence": 2,
+    "out_of_scope_abstained": [
+      true
+    ],
+    "out_of_scope_details": [
+      {
+        "id": "n11",
+        "question": "What did the lecturer say about the Roman Senate and the outcome of the Punic Wars?",
+        "in_scope": false,
+        "relevant_topics": [],
+        "retrieved_topics_rerank": [
+          "Fermentation and the Role of Microorganisms",
+          "Food Preservation Techniques",
+          "Food Preservation Techniques"
+        ],
+        "rerank_scores": [
+          -10.98,
+          -11.1,
+          -11.12
+        ],
+        "recall_at_3_rerank": null,
+        "precision_at_3_rerank": null,
+        "recall_at_3_norerank": null,
+        "precision_at_3_norerank": null,
+        "abstained": true,
+        "low_confidence": false,
+        "rag_answer": "I couldn't find anything in this lecture covering that topic.",
+        "baseline_answer": "The lecturer mentioned that the Roman Senate played a crucial role in managing foreign policy, including negotiations with Carthage during the Punic Wars. The Senate was instrumental in deciding to declare war against Carthage after its defeat at the Battle of Cannae, which led to Rome gaining control over Sicily and southern Italy. The Senate also had significant influence in negotiating peace terms with Carthage following the wars.",
+        "rag_faithfulness": null,
+        "rag_contradiction_rate": null,
+        "rag_faithfulness_per_chunk": null,
+        "rag_contradiction_rate_per_chunk": null,
+        "expected_answer": "Not covered in this lecture - the lecture is about nutrition science and never mentions the Roman Senate, Carthage, or the Punic Wars."
+      }
+    ],
+    "per_question": [
+      {
+        "id": "n1",
+        "question": "What is nutrition science and how did it originally develop as a field?",
+        "in_scope": true,
+        "relevant_topics": [
+          "What Is Nutrition Science and Why It Matters"
+        ],
+        "retrieved_topics_rerank": [
+          "What Is Nutrition Science and Why It Matters",
+          "What Is Nutrition Science and Why It Matters",
+          "Sustainable Food Systems"
+        ],
+        "rerank_scores": [
+          5.2,
+          4.43,
+          -8.11
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 0.6666666666666666,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 0.6666666666666666,
+        "abstained": false,
+        "low_confidence": false,
+        "rag_answer": "Nutrition science is the study of how the food we eat affects our bodies, including how it breaks down, absorbs, and uses nutrients to provide energy and building blocks for growth and maintenance. It originated historically through efforts to understand deficiency diseases caused by a lack of essential nutrients in the diet, such as scurvy due to vitamin C deficiency.",
+        "baseline_answer": "Nutrition science is an interdisciplinary field that studies the relationship between food, diet, and health. It evolved from medical practices aimed at treating diseases like rickets in children and scurvy in sailors during the 19th century. The development of modern nutrition science was furthered by the work of scientists such as Edward Mellanby who discovered vitamin A deficiency in animals and humans, leading to the understanding of its role in preventing blindness. This led to increased interest in dietary factors affecting human health, which eventually became the foundation of nutritional research.",
+        "rag_faithfulness": 0.0,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 0.5,
+        "rag_contradiction_rate_per_chunk": 0.0,
+        "expected_answer": "Nutrition science studies how food is broken down, absorbed, and used by the body for energy and raw materials. It historically grew out of attempts to understand deficiency diseases like scurvy or rickets, and has since expanded to also study overconsumption and chronic disease."
+      },
+      {
+        "id": "n2",
+        "question": "What are the three macronutrients and what does each provide the body?",
+        "in_scope": true,
+        "relevant_topics": [
+          "Macronutrients - Carbohydrates, Protein, and Fat"
+        ],
+        "retrieved_topics_rerank": [
+          "Macronutrients - Carbohydrates, Protein, and Fat",
+          "Micronutrients - Vitamins and Minerals",
+          "Macronutrients - Carbohydrates, Protein, and Fat"
+        ],
+        "rerank_scores": [
+          7.6,
+          2.3,
+          0.31
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 0.6666666666666666,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 0.3333333333333333,
+        "abstained": false,
+        "low_confidence": false,
+        "rag_answer": "The three macronutrients are carbohydrates, protein, and fat. Carbohydrates serve as the primary quick energy source, breaking down into glucose which cells use for immediate energy. They include both simple sugars absorbed quickly and complex starches and fiber that digest more slowly, affecting blood sugar levels gently. Protein builds tissues, produces enzymes and hormones, and supports the immune system, although the body stores less protein compared to carbohydrates or fat. Fat provides twice the calories per gram of carbohydrates and protein, making it essential for vitamin absorption, cell membrane formation, hormone production, and energy storage.",
+        "baseline_answer": "The three macronutrients are carbohydrates, proteins, and fats. Carbohydrates provide energy, proteins build and repair tissues, and fats store energy and contribute to cell structure.",
+        "rag_faithfulness": 0.0,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 1.0,
+        "rag_contradiction_rate_per_chunk": 0.0,
+        "expected_answer": "Carbohydrates are the body's preferred quick energy source, broken down into glucose. Protein is built from amino acids and essential for building and repairing tissue, enzymes, and hormones. Fat is the most energy-dense macronutrient and is essential for absorbing certain vitamins and building cell membranes."
+      },
+      {
+        "id": "n3",
+        "question": "What is the difference between fat-soluble and water-soluble vitamins?",
+        "in_scope": true,
+        "relevant_topics": [
+          "Micronutrients - Vitamins and Minerals"
+        ],
+        "retrieved_topics_rerank": [
+          "Micronutrients - Vitamins and Minerals",
+          "Macronutrients - Carbohydrates, Protein, and Fat",
+          "Macronutrients - Carbohydrates, Protein, and Fat"
+        ],
+        "rerank_scores": [
+          4.75,
+          -2.7,
+          -7.1
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 0.3333333333333333,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 0.3333333333333333,
+        "abstained": false,
+        "low_confidence": true,
+        "rag_answer": "Fat-soluble vitamins, such as A, D, E, and K, can be stored in the body's fatty tissues. Water-soluble vitamins, including vitamin C and the B vitamins, cannot be stored and must be regularly replenished through diet.",
+        "baseline_answer": "Fat-soluble vitamins, such as A, D, E, and K, can be stored in the body's fatty tissues and liver. They dissolve in fats and oils and need to be absorbed with dietary fats. Water-soluble vitamins like C and B complex do not store in the body; they must be replenished regularly through diet or supplements.",
+        "rag_faithfulness": 0.0,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 0.0,
+        "rag_contradiction_rate_per_chunk": 0.5,
+        "expected_answer": "Fat-soluble vitamins (A, D, E, K) can be stored by the body in fatty tissue, while water-soluble vitamins (like vitamin C and the B vitamins) aren't stored well and need more regular replenishment."
+      },
+      {
+        "id": "n4",
+        "question": "What food preservation techniques were discussed and how do they prevent spoilage?",
+        "in_scope": true,
+        "relevant_topics": [
+          "Food Preservation Techniques"
+        ],
+        "retrieved_topics_rerank": [
+          "Food Preservation Techniques",
+          "Food Preservation Techniques",
+          "Sustainable Food Systems"
+        ],
+        "rerank_scores": [
+          6.07,
+          5.4,
+          -5.54
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 0.6666666666666666,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 0.6666666666666666,
+        "abstained": false,
+        "low_confidence": false,
+        "rag_answer": "The lecture covered several food preservation techniques that prevent spoilage:\n\n1. **Drying**: Removes moisture needed for bacterial growth, preserving foods like dried fruits, jerky, and grains.\n2. **Salting and Sugaring**: Draw water out of food through osmosis, extending shelf life of preserved items such as cured meats and jams.\n3. **Refrigeration and Freezing**: Slow down chemical and microbial processes causing spoilage but do not completely halt them, leading to eventual degradation of frozen food.\n4. **Canning**: Heats food to kill microorganisms and seals it in containers to prevent recontamination, developed for feeding Napoleon\u2019s army.\n5. **Pasteurization**: Briefly heats food to kill pathogens without fully cooking it.\n6. **Vacuum Sealing**: Removes oxygen necessary for some spoilage organisms to survive.\n\nThese methods collectively help extend the storage time of food while maintaining its nutritional value and safety.",
+        "baseline_answer": "The discussion covered several food preservation techniques, including freezing, canning, drying, pickling, fermenting, and vacuum sealing. These methods work by slowing down or stopping microbial growth to extend shelf life, thereby preventing spoilage. For example, freezing slows down bacterial activity, while canning uses high heat to kill bacteria and preserve food safely. Each technique is effective in different ways depending on the type of food being preserved.",
+        "rag_faithfulness": 0.0,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 0.15384615384615385,
+        "rag_contradiction_rate_per_chunk": 0.07692307692307693,
+        "expected_answer": "Drying and salting/sugaring remove the water bacteria and mould need to grow. Refrigeration and freezing slow microbial processes. Canning heats food to destroy microorganisms then seals it airtight, while pasteurisation briefly heats food to kill pathogens without fully cooking it."
+      },
+      {
+        "id": "n5",
+        "question": "What is the Maillard reaction and why does it matter for cooking?",
+        "in_scope": true,
+        "relevant_topics": [
+          "The Maillard Reaction and Cooking Chemistry"
+        ],
+        "retrieved_topics_rerank": [
+          "The Maillard Reaction and Cooking Chemistry",
+          "The Maillard Reaction and Cooking Chemistry",
+          "Fermentation and the Role of Microorganisms"
+        ],
+        "rerank_scores": [
+          7.85,
+          -7.55,
+          -9.04
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 0.6666666666666666,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 0.6666666666666666,
+        "abstained": false,
+        "low_confidence": false,
+        "rag_answer": "The Maillard reaction is a chemical reaction between amino acids and reducing sugars that occurs during heating, particularly above 140\u00b0C. It results in the production of numerous flavor and aroma compounds, making browned food taste significantly more complex compared to uncooked food. This reaction is crucial for processes such as searing meats, toasting bread, and roasting coffee beans, contributing to the rich flavors associated with these culinary methods.",
+        "baseline_answer": "The Maillard reaction, also known as the browning or caramelization process, occurs when amino acids and reducing sugars react at high temperatures. It's crucial in cooking because it enhances flavors, colors, and textures of foods, contributing to their appetizing appeal.",
+        "rag_faithfulness": 0.0,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 0.6666666666666666,
+        "rag_contradiction_rate_per_chunk": 0.0,
+        "expected_answer": "The Maillard reaction is a chemical reaction between amino acids and reducing sugars that occurs when food is heated above about 140 degrees Celsius, responsible for browning and complex flavour development, distinct from caramelisation (browning of sugars alone)."
+      },
+      {
+        "id": "n6",
+        "question": "What is fermentation and what foods does it produce?",
+        "in_scope": true,
+        "relevant_topics": [
+          "Fermentation and the Role of Microorganisms"
+        ],
+        "retrieved_topics_rerank": [
+          "Fermentation and the Role of Microorganisms",
+          "Fermentation and the Role of Microorganisms",
+          "Sustainable Food Systems"
+        ],
+        "rerank_scores": [
+          7.78,
+          -0.57,
+          -6.13
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 0.6666666666666666,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 0.6666666666666666,
+        "abstained": false,
+        "low_confidence": false,
+        "rag_answer": "Fermentation is a metabolic process involving microorganisms like bacteria, yeast, or mold breaking down sugars and other compounds in food. It results in the production of acids, gases, or alcohol as byproducts. Common examples include bread rising due to yeast fermentation and the creation of alcoholic beverages such as beer and wine. Additionally, lactic acid fermentation is used in making yogurt, sauerkraut, kimchi, and traditional pickled vegetables.",
+        "baseline_answer": "Fermentation is a biological process where microorganisms break down organic matter, producing energy in the form of ATP. It can occur naturally or be induced by adding specific enzymes. Common fermented foods include yogurt, sauerkraut, kimchi, pickles, and bread.",
+        "rag_faithfulness": 0.25,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 0.75,
+        "rag_contradiction_rate_per_chunk": 0.0,
+        "expected_answer": "Fermentation is a metabolic process where microorganisms break down sugars, producing acids, gases, or alcohol as byproducts. Yeast fermentation produces bread's rise and alcohol in beer and wine; lactic acid fermentation produces yoghurt, sauerkraut, kimchi, and pickles."
+      },
+      {
+        "id": "n7",
+        "question": "What are the four core principles of food safety?",
+        "in_scope": true,
+        "relevant_topics": [
+          "Food Safety and Foodborne Illness"
+        ],
+        "retrieved_topics_rerank": [
+          "Food Safety and Foodborne Illness",
+          "Food Safety and Foodborne Illness",
+          "What Is Nutrition Science and Why It Matters"
+        ],
+        "rerank_scores": [
+          7.58,
+          -2.98,
+          -5.86
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 0.6666666666666666,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 0.6666666666666666,
+        "abstained": false,
+        "low_confidence": true,
+        "rag_answer": "The four core principles of food safety summarized in the lectures are:\n\n1. **Clean**: Wash hands and surfaces to prevent contamination.\n2. **Separate**: Avoid cross-contamination by using different cutting boards for raw foods and ready-to-eat items.\n3. **Cook**: Heat food to a safe internal temperature to kill relevant pathogens.\n4. **Chill**: Refrigerate perishable food promptly to slow bacterial growth.",
+        "baseline_answer": "The four core principles of food safety include proper handling, cooking, storage, and personal hygiene. Proper handling involves keeping raw foods separate from ready-to-eat foods to prevent contamination. Cooking ensures that food reaches safe internal temperatures to kill harmful bacteria. Storage maintains food at appropriate temperatures to slow bacterial growth. Personal hygiene includes washing hands frequently, especially before preparing or eating food. These practices help protect against foodborne illnesses.",
+        "rag_faithfulness": 0.0,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 0.0,
+        "rag_contradiction_rate_per_chunk": 0.0,
+        "expected_answer": "Clean (wash hands and surfaces), separate (avoid cross-contamination), cook (heat food to a safe internal temperature), and chill (refrigerate perishable food promptly to avoid the temperature danger zone where bacteria multiply quickly)."
+      },
+      {
+        "id": "n8",
+        "question": "How do nutritional needs change across different life stages?",
+        "in_scope": true,
+        "relevant_topics": [
+          "Nutrition Across the Life Course"
+        ],
+        "retrieved_topics_rerank": [
+          "Nutrition Across the Life Course",
+          "Nutrition Across the Life Course",
+          "What Is Nutrition Science and Why It Matters"
+        ],
+        "rerank_scores": [
+          6.2,
+          -5.25,
+          -6.24
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 0.6666666666666666,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 0.3333333333333333,
+        "abstained": false,
+        "low_confidence": false,
+        "rag_answer": "Nutritional needs change significantly across different life stages. In infancy, breast milk or formula provides essential nutrition until solids can be introduced gradually. During childhood and adolescence, there is increased demand for proteins, calcium, and iron due to rapid growth. As adulthood approaches, nutritional needs focus on maintaining current health while also preventing diseases. During pregnancy, additional nutrients such as folate, iron, and calories are required to support fetal development. In later life, although calorie needs may decrease slightly, the need for certain nutrients like protein, calcium, and vitamin D remains constant or increases, posing challenges for older adults who must balance these needs with reduced caloric intake.",
+        "baseline_answer": "Nutritional needs vary significantly across different life stages due to changes in metabolism, growth rates, and overall health requirements. Infants require high caloric intake with specific nutrients like iron and vitamin D for brain development. Children need more calories but less fat than adults, focusing on balanced diets rich in fruits, vegetables, and whole grains. Adolescents experience rapid growth spurts requiring additional protein and calcium. Adults face unique challenges such as maintaining bone density and managing stress-related eating habits. Older adults may benefit from higher intakes of vitamins B12 and D, along with omega-3 fatty acids, to support cognitive function and muscle maintenance.",
+        "rag_faithfulness": 0.0,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 0.6666666666666666,
+        "rag_contradiction_rate_per_chunk": 0.0,
+        "expected_answer": "Infancy relies on breast milk or formula; childhood and adolescence need higher relative protein, calcium, and iron for growth; pregnancy increases requirements for folate, iron, and calories; older age generally needs fewer calories but similar or greater protein, calcium, and vitamin D."
+      },
+      {
+        "id": "n9",
+        "question": "Why is food production considered an environmental issue?",
+        "in_scope": true,
+        "relevant_topics": [
+          "Sustainable Food Systems"
+        ],
+        "retrieved_topics_rerank": [
+          "Sustainable Food Systems",
+          "Sustainable Food Systems",
+          "Fermentation and the Role of Microorganisms"
+        ],
+        "rerank_scores": [
+          7.16,
+          1.5,
+          -5.36
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 0.6666666666666666,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 0.6666666666666666,
+        "abstained": false,
+        "low_confidence": false,
+        "rag_answer": "Food production is considered an environmental issue due to its significant impact on greenhouse gas emissions, land use changes, and freshwater consumption. Producing a kilogram of beef typically requires much more land and water compared to plant-based protein sources, leading to higher emissions per unit of food produced. Additionally, food waste represents wasted resources throughout the entire production chain, further exacerbating environmental concerns.",
+        "baseline_answer": "Food production can be an environmental issue due to its significant impact on land use, water consumption, and greenhouse gas emissions. Agriculture often requires large amounts of resources like water and energy, leading to deforestation and soil degradation in some cases. Additionally, intensive farming practices contribute to air pollution from chemical fertilizers and pesticides. These factors collectively affect biodiversity, climate change, and overall ecosystem health.",
+        "rag_faithfulness": 0.0,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 0.6666666666666666,
+        "rag_contradiction_rate_per_chunk": 0.0,
+        "expected_answer": "Food production is a major driver of greenhouse gas emissions, land use change, and freshwater consumption, with foods like beef requiring vastly more land and water and generating far more emissions than most plant-based protein sources. Food waste compounds the problem."
+      },
+      {
+        "id": "n10",
+        "question": "How does a deficiency in a specific micronutrient connect to the historical origins of nutrition science?",
+        "in_scope": true,
+        "relevant_topics": [
+          "What Is Nutrition Science and Why It Matters",
+          "Micronutrients - Vitamins and Minerals"
+        ],
+        "retrieved_topics_rerank": [
+          "What Is Nutrition Science and Why It Matters",
+          "Micronutrients - Vitamins and Minerals",
+          "What Is Nutrition Science and Why It Matters"
+        ],
+        "rerank_scores": [
+          2.5,
+          0.05,
+          -0.3
+        ],
+        "recall_at_3_rerank": 1.0,
+        "precision_at_3_rerank": 1.0,
+        "recall_at_3_norerank": 1.0,
+        "precision_at_3_norerank": 1.0,
+        "abstained": false,
+        "low_confidence": false,
+        "rag_answer": "A deficiency in a specific micronutrient connects to the historical origins of nutrition science through the understanding of deficiency diseases such as scurvy and rickets, which were historically caused by a lack of certain nutrients in the diet. These early studies laid the foundation for recognizing the importance of vitamins and minerals in maintaining human health.",
+        "baseline_answer": "A deficiency in a specific micronutrient, such as iron or iodine, can be linked to historical origins of nutrition science through the development of dietary guidelines and public health campaigns aimed at addressing these deficiencies. For example, the discovery that iodine is essential for thyroid function led to efforts to fortify salt with iodine in many countries, which was part of the broader effort to improve public health by ensuring adequate nutrition across populations. This connection highlights how early nutritional research informed modern public health strategies.",
+        "rag_faithfulness": 0.5,
+        "rag_contradiction_rate": 0.0,
+        "rag_faithfulness_per_chunk": 0.5,
+        "rag_contradiction_rate_per_chunk": 0.0,
+        "expected_answer": "Nutrition science historically grew out of understanding deficiency diseases like scurvy; scurvy is specifically caused by a deficiency in vitamin C, a water-soluble micronutrient, tying the field's origins directly to micronutrient deficiency."
+      },
+      {
+        "id": "n11",
+        "question": "What did the lecturer say about the Roman Senate and the outcome of the Punic Wars?",
+        "in_scope": false,
+        "relevant_topics": [],
+        "retrieved_topics_rerank": [
+          "Fermentation and the Role of Microorganisms",
+          "Food Preservation Techniques",
+          "Food Preservation Techniques"
+        ],
+        "rerank_scores": [
+          -10.98,
+          -11.1,
+          -11.12
+        ],
+        "recall_at_3_rerank": null,
+        "precision_at_3_rerank": null,
+        "recall_at_3_norerank": null,
+        "precision_at_3_norerank": null,
+        "abstained": true,
+        "low_confidence": false,
+        "rag_answer": "I couldn't find anything in this lecture covering that topic.",
+        "baseline_answer": "The lecturer mentioned that the Roman Senate played a crucial role in managing foreign policy, including negotiations with Carthage during the Punic Wars. The Senate was instrumental in deciding to declare war against Carthage after its defeat at the Battle of Cannae, which led to Rome gaining control over Sicily and southern Italy. The Senate also had significant influence in negotiating peace terms with Carthage following the wars.",
+        "rag_faithfulness": null,
+        "rag_contradiction_rate": null,
+        "rag_faithfulness_per_chunk": null,
+        "rag_contradiction_rate_per_chunk": null,
+        "expected_answer": "Not covered in this lecture - the lecture is about nutrition science and never mentions the Roman Senate, Carthage, or the Punic Wars."
+      }
+    ]
+  }
+]

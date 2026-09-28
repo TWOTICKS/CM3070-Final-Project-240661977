@@ -1,0 +1,79 @@
+[
+  {
+    "id": "n1",
+    "question": "What is nutrition science and how did it originally develop as a field?",
+    "relevant_topics": ["What Is Nutrition Science and Why It Matters"],
+    "expected_answer": "Nutrition science studies how food is broken down, absorbed, and used by the body for energy and raw materials. It historically grew out of attempts to understand deficiency diseases like scurvy or rickets, and has since expanded to also study overconsumption and chronic disease.",
+    "in_scope": true
+  },
+  {
+    "id": "n2",
+    "question": "What are the three macronutrients and what does each provide the body?",
+    "relevant_topics": ["Macronutrients - Carbohydrates, Protein, and Fat"],
+    "expected_answer": "Carbohydrates are the body's preferred quick energy source, broken down into glucose. Protein is built from amino acids and essential for building and repairing tissue, enzymes, and hormones. Fat is the most energy-dense macronutrient and is essential for absorbing certain vitamins and building cell membranes.",
+    "in_scope": true
+  },
+  {
+    "id": "n3",
+    "question": "What is the difference between fat-soluble and water-soluble vitamins?",
+    "relevant_topics": ["Micronutrients - Vitamins and Minerals"],
+    "expected_answer": "Fat-soluble vitamins (A, D, E, K) can be stored by the body in fatty tissue, while water-soluble vitamins (like vitamin C and the B vitamins) aren't stored well and need more regular replenishment.",
+    "in_scope": true
+  },
+  {
+    "id": "n4",
+    "question": "What food preservation techniques were discussed and how do they prevent spoilage?",
+    "relevant_topics": ["Food Preservation Techniques"],
+    "expected_answer": "Drying and salting/sugaring remove the water bacteria and mould need to grow. Refrigeration and freezing slow microbial processes. Canning heats food to destroy microorganisms then seals it airtight, while pasteurisation briefly heats food to kill pathogens without fully cooking it.",
+    "in_scope": true
+  },
+  {
+    "id": "n5",
+    "question": "What is the Maillard reaction and why does it matter for cooking?",
+    "relevant_topics": ["The Maillard Reaction and Cooking Chemistry"],
+    "expected_answer": "The Maillard reaction is a chemical reaction between amino acids and reducing sugars that occurs when food is heated above about 140 degrees Celsius, responsible for browning and complex flavour development, distinct from caramelisation (browning of sugars alone).",
+    "in_scope": true
+  },
+  {
+    "id": "n6",
+    "question": "What is fermentation and what foods does it produce?",
+    "relevant_topics": ["Fermentation and the Role of Microorganisms"],
+    "expected_answer": "Fermentation is a metabolic process where microorganisms break down sugars, producing acids, gases, or alcohol as byproducts. Yeast fermentation produces bread's rise and alcohol in beer and wine; lactic acid fermentation produces yoghurt, sauerkraut, kimchi, and pickles.",
+    "in_scope": true
+  },
+  {
+    "id": "n7",
+    "question": "What are the four core principles of food safety?",
+    "relevant_topics": ["Food Safety and Foodborne Illness"],
+    "expected_answer": "Clean (wash hands and surfaces), separate (avoid cross-contamination), cook (heat food to a safe internal temperature), and chill (refrigerate perishable food promptly to avoid the temperature danger zone where bacteria multiply quickly).",
+    "in_scope": true
+  },
+  {
+    "id": "n8",
+    "question": "How do nutritional needs change across different life stages?",
+    "relevant_topics": ["Nutrition Across the Life Course"],
+    "expected_answer": "Infancy relies on breast milk or formula; childhood and adolescence need higher relative protein, calcium, and iron for growth; pregnancy increases requirements for folate, iron, and calories; older age generally needs fewer calories but similar or greater protein, calcium, and vitamin D.",
+    "in_scope": true
+  },
+  {
+    "id": "n9",
+    "question": "Why is food production considered an environmental issue?",
+    "relevant_topics": ["Sustainable Food Systems"],
+    "expected_answer": "Food production is a major driver of greenhouse gas emissions, land use change, and freshwater consumption, with foods like beef requiring vastly more land and water and generating far more emissions than most plant-based protein sources. Food waste compounds the problem.",
+    "in_scope": true
+  },
+  {
+    "id": "n10",
+    "question": "How does a deficiency in a specific micronutrient connect to the historical origins of nutrition science?",
+    "relevant_topics": ["What Is Nutrition Science and Why It Matters", "Micronutrients - Vitamins and Minerals"],
+    "expected_answer": "Nutrition science historically grew out of understanding deficiency diseases like scurvy; scurvy is specifically caused by a deficiency in vitamin C, a water-soluble micronutrient, tying the field's origins directly to micronutrient deficiency.",
+    "in_scope": true
+  },
+  {
+    "id": "n11",
+    "question": "What did the lecturer say about the Roman Senate and the outcome of the Punic Wars?",
+    "relevant_topics": [],
+    "expected_answer": "Not covered in this lecture - the lecture is about nutrition science and never mentions the Roman Senate, Carthage, or the Punic Wars.",
+    "in_scope": false
+  }
+]

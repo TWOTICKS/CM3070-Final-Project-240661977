@@ -1,0 +1,79 @@
+[
+  {
+    "id": "q1",
+    "question": "What is the difference between supervised, unsupervised, and reinforcement learning?",
+    "relevant_topics": ["Supervised, Unsupervised, and Reinforcement Learning"],
+    "expected_answer": "Supervised learning trains on labelled examples (input plus correct output), unsupervised learning finds structure in unlabelled data (e.g. clustering), and reinforcement learning has an agent that learns a policy by taking actions in an environment and receiving rewards or penalties.",
+    "in_scope": true
+  },
+  {
+    "id": "q2",
+    "question": "What is the ReLU activation function and why is it popular in deep learning?",
+    "relevant_topics": ["Neural Network Fundamentals"],
+    "expected_answer": "ReLU (rectified linear unit) outputs zero for negative inputs and passes positive inputs through unchanged. It is popular because it is computationally cheap and helps avoid training problems that sigmoid can cause in deep networks.",
+    "in_scope": true
+  },
+  {
+    "id": "q3",
+    "question": "How does backpropagation work and why is it important for training neural networks?",
+    "relevant_topics": ["Training Neural Networks - Gradient Descent and Backpropagation"],
+    "expected_answer": "Backpropagation computes the gradient of the loss with respect to every weight by working backwards from the output to the input using the chain rule, allowing gradient descent to update weights efficiently. Without it, training deep networks with millions of parameters would not be feasible.",
+    "in_scope": true
+  },
+  {
+    "id": "q4",
+    "question": "What is dropout and how does it help prevent overfitting?",
+    "relevant_topics": ["Overfitting, Underfitting, and Regularization"],
+    "expected_answer": "Dropout randomly switches off a fraction of neurons during each training forward pass, preventing the network from relying too heavily on any single neuron and encouraging more robust, distributed representations, which reduces overfitting.",
+    "in_scope": true
+  },
+  {
+    "id": "q5",
+    "question": "What is the difference between a validation set and a test set?",
+    "relevant_topics": ["Overfitting, Underfitting, and Regularization"],
+    "expected_answer": "The validation set is used during training to tune hyperparameters and monitor for overfitting, while the test set is used only once at the end to get an honest estimate of real-world performance.",
+    "in_scope": true
+  },
+  {
+    "id": "q6",
+    "question": "How do convolutional neural networks process images differently from a fully connected network?",
+    "relevant_topics": ["Convolutional Neural Networks for Image Processing"],
+    "expected_answer": "CNNs use small filters/kernels that slide across the image to compute local features instead of connecting every pixel to every neuron, with early layers learning edges/corners and deeper layers combining these into complex shapes and objects; pooling layers reduce spatial size and add robustness to small translations.",
+    "in_scope": true
+  },
+  {
+    "id": "q7",
+    "question": "What problem do LSTMs and GRUs solve compared to basic RNNs?",
+    "relevant_topics": ["Recurrent Neural Networks and Sequence Modelling"],
+    "expected_answer": "Basic RNNs suffer from the vanishing/exploding gradient problem over long sequences. LSTMs and GRUs use gating mechanisms to control what information is kept or discarded over time, helping the network retain useful information over longer sequences.",
+    "in_scope": true
+  },
+  {
+    "id": "q8",
+    "question": "Why is accuracy alone not a good metric for imbalanced classification datasets, and what should be used instead?",
+    "relevant_topics": ["Evaluating Machine Learning Models"],
+    "expected_answer": "On imbalanced datasets a model can get high accuracy by always predicting the majority class while being useless. Precision, recall, the F1 score, and a confusion matrix give a more complete picture of performance.",
+    "in_scope": true
+  },
+  {
+    "id": "q9",
+    "question": "What examples of bias in machine learning systems were discussed, and what other ethical concerns were raised?",
+    "relevant_topics": ["Ethics and Bias in Machine Learning"],
+    "expected_answer": "Examples include hiring algorithms that discriminated against women due to historical hiring data, and facial recognition systems that performed worse on darker-skinned faces due to unrepresentative training data. Other concerns raised include privacy, lack of transparency (black-box models), and the risk of AI systems generating plausible but incorrect information (hallucination).",
+    "in_scope": true
+  },
+  {
+    "id": "q10",
+    "question": "Compare CNNs and RNNs in terms of the kind of data they are designed to process.",
+    "relevant_topics": ["Convolutional Neural Networks for Image Processing", "Recurrent Neural Networks and Sequence Modelling"],
+    "expected_answer": "CNNs are designed for grid-like data such as images, using filters to capture spatial patterns. RNNs are designed for sequential data such as text, audio, or time series, maintaining a hidden state that carries information from earlier elements in the sequence.",
+    "in_scope": true
+  },
+  {
+    "id": "q11",
+    "question": "What did the lecturer say about quantum computing and its impact on machine learning?",
+    "relevant_topics": [],
+    "expected_answer": "Not covered in this lecture - quantum computing was not discussed.",
+    "in_scope": false
+  }
+]

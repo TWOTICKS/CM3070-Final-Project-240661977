@@ -1,0 +1,79 @@
+[
+  {
+    "id": "r1",
+    "question": "What legendary story explains the founding of Rome, and how did the monarchy end?",
+    "relevant_topics": ["The Founding and Early Kingdom of Rome"],
+    "expected_answer": "According to tradition, Rome was founded in 753 BCE by Romulus, who along with his twin brother Remus had been raised by a she-wolf; Romulus killed Remus and became Rome's first king. The monarchy ended around 509 BCE when a rebellion against the tyranny of Tarquin the Proud abolished one-man rule.",
+    "in_scope": true
+  },
+  {
+    "id": "r2",
+    "question": "How did the Roman Republic divide power between the Senate, consuls, and tribunes to prevent tyranny?",
+    "relevant_topics": ["The Roman Republic and Its Institutions"],
+    "expected_answer": "The Senate of wealthy patricians advised on policy and controlled finances, two annually elected consuls held executive authority and could veto each other, and plebeians eventually won the right to elect tribunes who could veto actions harming plebeian interests.",
+    "in_scope": true
+  },
+  {
+    "id": "r3",
+    "question": "What happened during the Second Punic War, and how did Rome ultimately defeat Carthage?",
+    "relevant_topics": ["The Punic Wars and Roman Expansion"],
+    "expected_answer": "Hannibal marched an army across the Alps and inflicted devastating defeats on Rome, notably at Cannae, but Rome rebuilt its forces and General Scipio defeated Hannibal at the Battle of Zama in 202 BCE; Rome later destroyed Carthage entirely in the Third Punic War in 146 BCE.",
+    "in_scope": true
+  },
+  {
+    "id": "r4",
+    "question": "Why is Julius Caesar's crossing of the Rubicon significant, and how did he die?",
+    "relevant_topics": ["Julius Caesar and the Fall of the Republic"],
+    "expected_answer": "Crossing the Rubicon River with his army in 49 BCE was technically a declaration of war on the Republic, giving us the phrase for any irreversible decision. Caesar was later declared dictator for life and was assassinated by senators led by Brutus and Cassius on the Ides of March, 44 BCE.",
+    "in_scope": true
+  },
+  {
+    "id": "r5",
+    "question": "How did Augustus establish the Principate while appearing to preserve republican government?",
+    "relevant_topics": ["Augustus and the Beginning of the Empire"],
+    "expected_answer": "Octavian, later titled Augustus by the Senate in 27 BCE, presented himself merely as \"first citizen\" (princeps) rather than seizing power outright, while in practice holding supreme military and political authority - monarchy dressed in republican clothing.",
+    "in_scope": true
+  },
+  {
+    "id": "r6",
+    "question": "What Roman engineering achievements allowed the empire to function as one connected system?",
+    "relevant_topics": ["Roman Engineering and Infrastructure"],
+    "expected_answer": "Rome built a road network of over 400,000 kilometres, aqueducts bringing fresh water into cities, durable concrete (some structures like the Pantheon's dome still stand today), and sophisticated sewer systems like the Cloaca Maxima.",
+    "in_scope": true
+  },
+  {
+    "id": "r7",
+    "question": "What was daily life like for different social classes in ancient Rome?",
+    "relevant_topics": ["Daily Life in Ancient Rome"],
+    "expected_answer": "Society was sharply stratified between elites, ordinary citizens, freedmen, and a large enslaved population. Most urban Romans lived in cramped multi-story apartment blocks called insulae, and public entertainment like gladiatorial games and chariot races was central to social and political life.",
+    "in_scope": true
+  },
+  {
+    "id": "r8",
+    "question": "What economic, political, and military factors led to the fall of the Western Roman Empire?",
+    "relevant_topics": ["The Decline and Fall of the Western Empire"],
+    "expected_answer": "Chronic inflation and a shrinking tax base, near-constant civil wars and rapid turnover of emperors, and sustained frontier pressure combined with reliance on foreign mercenaries all weakened central authority, traditionally dated to 476 CE when Odoacer deposed the last Western emperor.",
+    "in_scope": true
+  },
+  {
+    "id": "r9",
+    "question": "How does Roman law and Republican institutional design influence modern government?",
+    "relevant_topics": ["The Legacy of Rome"],
+    "expected_answer": "Roman law is a direct ancestor of legal systems across Europe, particularly around contracts and property rights, and the Republic's ideas of checks and balances, elected representatives, and term limits directly influenced later constitutions, including that of the United States.",
+    "in_scope": true
+  },
+  {
+    "id": "r10",
+    "question": "Compare the checks on power in the Roman Republic with the authority Augustus actually held under the Principate.",
+    "relevant_topics": ["The Roman Republic and Its Institutions", "Augustus and the Beginning of the Empire"],
+    "expected_answer": "The Republic split power between the Senate, two mutually-vetoing consuls, and tribunes specifically to prevent one person accumulating control, whereas Augustus, while nominally just \"first citizen\", held supreme military and political authority in practice - the Principate preserved the Republic's forms while ending its actual distribution of power.",
+    "in_scope": true
+  },
+  {
+    "id": "r11",
+    "question": "What did the lecturer say about dropout and neural network regularization?",
+    "relevant_topics": [],
+    "expected_answer": "Not covered in this lecture - the lecture is about Roman history and never mentions neural networks, dropout, or machine learning.",
+    "in_scope": false
+  }
+]
