@@ -130,6 +130,20 @@ data/
 results/                   Evaluation output
 ```
 
+## Design decisions and where they are explained
+
+The report covers the reasoning behind the parts of the code that are not
+self-evident:
+
+- The abstention thresholds in `pipeline.py` (`-5.0` on retrieval confidence,
+  `0.15` and `0.5` on answer faithfulness) are derived in sections 4.4 and
+  4.6, with the full threshold sweep in Appendix E.
+- `check()` and `check_per_chunk()` in `faithfulness.py` are the before and
+  after of the faithfulness fix in section 4.5. The original is kept so
+  failure can be reproduced with `ask_before.py`.
+- The per- question error breakdown behind the results table above is in
+  Appendix F.
+
 ## Note on the transcripts
 
 All three lecture transcripts are synthetic, written for this project. They are
