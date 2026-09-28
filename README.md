@@ -27,7 +27,7 @@ it was chosen; the other three is designed but not built.
 ## Models
 
 | Role | Model |
-|---|---|
+
 | Embeddings | `sentence-transformers/all-MiniLM-L6-v2` |
 | Re-ranking | `cross-encoder/ms-marco-MiniLM-L-6-v2` |
 | Generation | `Qwen/Qwen2.5-1.5B-Instruct` |
@@ -113,7 +113,7 @@ Two findings the report treats in detail, both negative:
 
 ```
 app.py                     Web interface (Gradio)
-ask.py / ask_before.py     CLI demo — current and pre-fix versions
+ask.py / ask_before.py     CLI demo - current and pre-fix versions
 evaluate.py                Single-domain evaluation
 evaluate_cross_domain.py   Three-domain evaluation
 src/
@@ -149,3 +149,5 @@ self-evident:
 All three lecture transcripts are synthetic, written for this project. They are
 not recordings of real lectures, which avoids any copyright or consent issue
 and give a known ground truth for evaluation.
+
+Okay bye!!!
